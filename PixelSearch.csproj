@@ -1,0 +1,11 @@
+<Project>
+    <ItemGroup>
+        <Compile Include="Main.cs">
+    </ItemGroup>
+    <Target Name="Build">
+        <Csc Sources="@(Compile)">
+    </Target>
+    <PropertyGroup>
+        <AssemblyName>PixelSearch.exe</AssemblyName>
+        <OutputPath>Bin</OutputPath>
+</Project>
